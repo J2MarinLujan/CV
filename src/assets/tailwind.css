@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mgContainer {
+  @apply w-full h-full flex justify-center items-center;
+}
+.mgContent {
+  @apply w-full p-6 md:pt-20 md:py-4 max-w-5xl text-primary;
+}
+.w-h-full {
+  @apply w-full h-full;
+}
+.center-center {
+  @apply flex justify-center items-center;
+}
+.center-start {
+  @apply flex justify-center items-start;
+}
+.center-end {
+  @apply flex justify-center items-end;
+}
+.between-center {
+  @apply flex justify-between items-center;
+}
+.around-center {
+  @apply flex justify-around items-center;
+}
+.start-center {
+  @apply flex justify-start items-center;
+}
+.end-center {
+  @apply flex justify-end items-center;
+}
