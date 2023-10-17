@@ -1,20 +1,20 @@
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 .animation {
-  animation: 1s wipe-in-down;
+	animation: 1s wipe-in-down;
 }
 
 @keyframes wipe-in-down {
-  from {
-    clip-path: inset(0 0 100% 0);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
+	from {
+		clip-path: inset(0 0 100% 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
 }
 
-[transition-style='in:wipe:down'] {
-  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+[transition-style="in:wipe:down"] {
+	animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
 }
