@@ -11,7 +11,7 @@
 					<h3 class="text-center text-xl font-medium mb-4">Mensaje via</h3>
 					<div class="w-full center-center gap-5 sm:gap-10">
 						<div
-							class="w-full max-w-[208px] h-52 center-center flex-col bg-white p-4 gap-2 rounded-xl text-center border border-gray-300 cursor-default"
+							class="whatsapp w-full max-w-[208px] h-52 center-center flex-col bg-white p-4 gap-2 rounded-xl text-center border border-gray-300 cursor-default"
 						>
 							<div class="center-center flex-col">
 								<svg
@@ -53,7 +53,7 @@
 						</div>
 
 						<div
-							class="w-full max-w-[208px] h-52 center-center flex-col bg-white p-4 gap-2 rounded-xl text-center border border-gray-300 cursor-default"
+							class="messenger w-full max-w-[208px] h-52 center-center flex-col bg-white p-4 gap-2 rounded-xl text-center border border-gray-300 cursor-default"
 						>
 							<div class="center-center flex-col">
 								<svg
@@ -118,4 +118,18 @@ const contact = {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.whatsapp:hover,
+.whatsapp:hover div svg {
+	color: #25d366;
+	transition-duration: 0.3s;
+	border-color: #25d366;
+}
+
+.messenger:hover,
+.messenger:hover div svg {
+	color: #006aff;
+	transition-duration: 0.3s;
+	border-color: #006aff;
+}
+</style>

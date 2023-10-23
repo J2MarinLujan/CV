@@ -89,7 +89,7 @@
 								"
 							>
 								<div
-									class="w-full center-start flex-col gap-2 bg-white rounded-b-box rounded-tl-box p-4 shadow-xl"
+									class="in-one w-full center-start flex-col gap-2 bg-white rounded-b-box rounded-tl-box p-4 shadow-xl"
 								>
 									<h3 class="text-base font-medium start-center gap-1">
 										<svg
@@ -152,7 +152,7 @@
 									></span>
 								</div>
 								<div
-									class="w-full center-end flex-col gap-2 bg-white rounded-b-box rounded-tr-box p-4 shadow-xl"
+									class="in-two w-full center-end flex-col gap-2 bg-white rounded-b-box rounded-tr-box p-4 shadow-xl"
 								>
 									<h3 class="w-full text-base font-medium end-center gap-1">
 										{{ item.role }}
@@ -250,5 +250,38 @@ function setToggleState(state: number) {
 <style scoped>
 .experience__line {
 	transform: translate(6px, 7px);
+}
+.in-one {
+	animation: circle-in-top-right ease-in-out 0.3s;
+}
+
+.in-two {
+	animation: circle-in-top-left ease-in-out 0.3s;
+}
+
+@keyframes circle-in-top-right {
+	from {
+		clip-path: circle(0%);
+	}
+	to {
+		clip-path: circle(150% at top right);
+	}
+}
+
+[transition-style="in:circle:top-right"] {
+	animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-top-right both;
+}
+
+@keyframes circle-in-top-left {
+	from {
+		clip-path: circle(0%);
+	}
+	to {
+		clip-path: circle(150% at top left);
+	}
+}
+
+[transition-style="in:circle:top-left"] {
+	animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-top-left both;
 }
 </style>

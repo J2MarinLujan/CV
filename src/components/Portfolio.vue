@@ -22,18 +22,18 @@
 						{{ item }}
 					</span>
 				</div>
-				<div class="grid sm:grid-cols-2 gap-10">
+				<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
 					<div
 						v-for="(item, index) in projectsFilter"
 						:key="index"
-						class="w-full max-w-md bg-white p-5 rounded-2xl grid gap-1 border border-gray-300"
+						class="w-full max-w-[300px] bg-white p-5 rounded-2xl grid gap-1 border border-gray-300"
 					>
 						<img :src="item.img" alt="" class="w-full mb-4" />
 						<h3 class="text-2xl font-semibold">{{ item.title }}</h3>
 						<p class="text-sm text-base-100">{{ item.tools }}</p>
 						<a
 							:href="item.url"
-							class="w-20 h-10 center-center text-base-content text-sm flex items-center bg-primary/50 hover:bg-primary rounded-lg gap-1 hover:gap-5 hover:w-24 mt-8 transition-[0.4s]"
+							class="w-20 h-10 center-center text-base-content text-sm flex items-center bg-primary hover:bg-primary/90 rounded-lg gap-1 hover:gap-5 hover:w-24 mt-5 transition-[0.4s]"
 							target="_blank"
 						>
 							Ver

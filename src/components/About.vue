@@ -7,7 +7,7 @@
 			</div>
 
 			<div
-				class="flex justify-between items-center md:items-start flex-col md:flex-row gap-10 md:gap-5 max-w-xl md:max-w-none"
+				class="flex justify-between items-center md:items-start flex-col md:flex-row gap-10 md:gap-5 max-w-xl md:max-w-none mx-auto"
 			>
 				<div class="w-h-full md:w-1/2 center-center flex-wrap gap-2 sm:gap-5">
 					<div
